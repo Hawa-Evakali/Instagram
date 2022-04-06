@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="w-75 vh-100">
+    <div class="row w-75 m-auto mt-5">
+        <div class="col-md-6 profile-photo">
+            <div class="card">
+                <img src="{{image.image.url}}" alt="">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="">
+                <h5 class="card-header"><a
+                        href="/profile/{{image.user.username}}">{%if image.author.profile.profile_pic %} <img
+                            src="{{image.user.profile.profile_photo.url}} " alt="" class="icon">
+                        {% endif %}{{ image.user.username}}</a>
+                </h5>
+
+                {% if comments%}
+                {% for comment in comments %}
+                <h6> {%if image.user.profile.profile_pic %}
+                    <img src="{{comment.user.profile.profile_photo.url}}" alt="" class="icon">{% endif %}
+                    <b>{{comment.user}}</b> {{comment.content}}</h6>
+                {% endfor %}
+                {% else%}
+                <p>No comments yet</p>
+                {% endif %}
+
+
+                <form action="" method="POST">
+                    {% csrf_token %}
+                   
+                    <div class="form-group">
+                        {{form.content}}
+                    </div>
+             
+
+
+                <button type="submit" class="btn btn-dark">Post</button>
+
+   </form>
+
+            </div>
+        </div>
+    </div>
+    {%endblock%}

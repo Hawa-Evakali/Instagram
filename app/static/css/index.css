@@ -1,0 +1,31 @@
+body{
+    background-color: #8134AF;
+}
+.flex{
+    display: flex;
+}
+#panel{
+    border-radius: 10px black;
+    padding:10px;
+
+}
+#instaicons{
+    margin-left: 20px;
+}
+#profile{
+    display: flex;
+
+}
+.navbar{
+    background-color: #DD2A7B;
+}
+#posts{
+    margin-left: 10rem;
+    margin-bottom: 5px;
+}
+.pffollowes{
+    display:flex
+}
+.fa-user{
+    font-size: 40px;
+}
