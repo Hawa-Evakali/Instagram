@@ -108,10 +108,10 @@ class Likes(models.Model):
      # delete like from database
     def delete_likes(self):
         self.delete()
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(fields=['user', 'image'], name="unique_like"),
-        ]
+    # class Meta:
+        # constraints = [
+            # models.UniqueConstraint(fields=['user', 'image'], name="unique_like"),
+        # ]
 class AddImageForm(ModelForm):
     class Meta:
         model = Image

@@ -11,9 +11,15 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 # Quick-start development settings - unsuitable for production
@@ -21,7 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-n8z7q1czjy4oq8dh4b4xv(4z-1*-90ble+)*#7d%3$)=6sf-f%'
-
+cloudinary.config( 
+  cloud_name ='dy4mvpc89', 
+  api_key ='767598712222228',  
+  api_secret ='VTE15W283wpfTUkVddIBLux-FrU', 
+)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -34,6 +44,8 @@ INSTALLED_APPS = [
     'app',
     'bootstrap4',
     'cloudinary',
+    'django_registration',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,7 +91,7 @@ WSGI_APPLICATION = 'instagram.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hawainsta',
+        'NAME': 'ighawa',
         'USER': 'hawa',
         'PASSWORD': '2444'
     }
@@ -120,7 +132,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
