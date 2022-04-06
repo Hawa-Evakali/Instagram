@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .models import *
 from .models import Image,Profile,Likes,Comments
 from django.http  import HttpResponse,Http404
-from django.contrib import message
+from django.contrib import messages
 
 
 # Create your views here.
