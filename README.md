@@ -54,6 +54,7 @@ python manage.py runserver
 
 ## Known bugs
 * User can only see images they add and not mine.
+
 ## Technologies Used
 - HTML
 - CSS
