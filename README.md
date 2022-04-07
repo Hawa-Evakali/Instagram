@@ -53,4 +53,16 @@ python manage.py runserver
 - Django
 - PostgreSQL
 
+- Open the browser and navigate to https://ig45gram.herokuapp.com/
+ to see the application in 
+action
+
+To make a contribution to the code used or 
+any suggestions you can click on the 
+contact link and email me your suggestions.
+
+- Email: ailabeyqute@gmailcom
+
+
+
 
