@@ -19,3 +19,20 @@ your computer
 server using virtual environment
 
 
+```
+python3.8 -m venv  virtual
+```
+- To activate the virtual environment
+
+```
+source virtual/bin/activate
+
+```
+pip install -r requirements.txt
+```
+
+```
+pip install bootstrap
+```
+
+
