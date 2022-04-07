@@ -39,5 +39,12 @@ pip install bootstrap
 with your own Cloudinary credentials and 
 database credentials
 
+- To run the server
+
+```
+python manage.py runserver
+
+```
+
 
 
