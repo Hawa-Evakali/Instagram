@@ -34,5 +34,9 @@ pip install -r requirements.txt
 ```
 pip install bootstrap
 ```
+- Edit the .env file and replace the values
+with your own Cloudinary credentials and 
+database credentials
+
 
 
