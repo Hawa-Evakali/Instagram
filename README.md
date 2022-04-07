@@ -45,6 +45,12 @@ database credentials
 python manage.py runserver
 
 ```
-
+## Technologies Used
+- HTML
+- CSS
+- Bootstrap
+- Python
+- Django
+- PostgreSQL
 
 
