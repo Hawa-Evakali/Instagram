@@ -9,6 +9,12 @@ pictures as well as search users based on
 their profile.Users are also able to update 
 their profiles and add posts.
 
+## User Story
+Register for an account
+* You should be able to search for othr profiles.
+* You can add images on your profile and post thm with captions.
+* You can comment on other users posts and yours as well.
+* You can also like the posts.
 ## Setup Instalation
 - Copy the github repository url
 - Clone to your computer
